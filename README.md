@@ -9,5 +9,5 @@ Processed data of clevage efficiencies and ribosome occupancy can be obtained in
 
 Source code for LASSO or Ridge regression model were reffered from sklearn.linear_model.Lasso (https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html) or sklearn.linear_model.Ridge (https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html) in Python scikit-learn package.
 
-Source code for LASSO or Ridge regression model can be obtained from 
+Source code for LASSO or Ridge regression model can be obtained in Source_code
 
