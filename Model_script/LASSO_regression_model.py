@@ -40,11 +40,11 @@ def make_folder () :
 
 def main(df) :
     #print(df.head())
-    y_array = df["CS"].values
+    y_array = df["CSsite_values"].values
 
-    gene_list = df["Gene_id"].values
+    gene_list = df["Cleavage_sites"].values
     
-    df = df.drop(["CS","Gene_id"],axis=1)
+    df = df.drop(["CSsite_values","Cleavage_sites"],axis=1)
 
     feature_columns = list(df.columns)
     x_array = df.values
@@ -63,7 +63,7 @@ def main(df) :
         pickle.dump(model, f)
 
     table=pd.DataFrame()
-    table["Gene_id"] = gene_list
+    table["Cleavage_sites"] = gene_list
     table["Measured"] = y_array
     table["Predicted"] = y_array_predicted
     table.to_csv(folder_path + "_prediction_value.txt",index=False,sep="\t") #Saving prediction_value
